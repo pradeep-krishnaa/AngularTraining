@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header class="app-header">
+  <h1 class="app-title">{{appName}}</h1>
+  <nav class="app-nav">
+    <a [routerLink]="['/dashboard']" routerLinkActive="active-link">Dashboard</a>
+    <a [routerLink]="['/bugs']" routerLinkActive="active-link">Bugs</a>
+    <a [routerLink]="['/login']" routerLinkActive="active-link">Login</a>
+  </nav>
+  </header>
+
+  <main class="app-main">
+    <router-outlet></router-outlet>
+  </main>
+
+</body>
+</html>
