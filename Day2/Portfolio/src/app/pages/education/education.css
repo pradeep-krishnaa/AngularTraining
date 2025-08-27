@@ -1,49 +1,144 @@
-.education {
-  padding: 3rem;
-  background: #f7fbff;
+/* Global Modern Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
-.education h2 {
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
   text-align: center;
+  color: #002b5c;
   margin-bottom: 2rem;
-  color: #003366;
+  position: relative;
 }
 
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #0077ff;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Education Timeline */
 .timeline {
   position: relative;
-  margin-left: 2rem;
-  border-left: 3px solid #003366;
-  padding-left: 2rem;
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: #0077ff33;
+  border-radius: 4px;
 }
 
 .timeline-item {
+  margin: 2rem 0;
   position: relative;
-  margin-bottom: 2rem;
 }
 
-.circle {
-  position: absolute;
-  left: -33px;
-  top: 5px;
-  width: 15px;
-  height: 15px;
-  background: #003366;
-  border-radius: 50%;
+.timeline-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  position: relative;
 }
 
-.content h3 {
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-left: auto;
+  border-left: 5px solid #0077ff;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-right: auto;
+  border-right: 5px solid #0077ff;
+}
+
+.timeline-content h3 {
   margin: 0;
-  color: #00509e;
+  font-size: 1.3rem;
+  color: #003366;
 }
 
-.content h4 {
-  margin: 0.3rem 0;
-  font-weight: normal;
-  color: #666;
-}
-
-.year {
+.timeline-content .date {
   font-size: 0.9rem;
-  font-weight: bold;
-  color: #888;
+  color: #555;
+}
+
+/* Certifications Grid */
+.certifications-section {
+  padding: 4rem 2rem;
+  background: #f7fbff;
+  text-align: center;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cert-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.cert-card i {
+  font-size: 2.5rem;
+  color: #0077ff;
+  margin-bottom: 1rem;
+}
+
+.cert-card h3 {
+  color: #002b5c;
+  margin-bottom: 0.5rem;
+}
+
+.cert-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.cert-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+
+.timeline-content .detail {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #444;
+}
+/* Fade-In Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -39,3 +39,12 @@
   border-bottom: 2px solid #003366;
   padding-bottom: 2px;
 }
+
+.signature {
+  font-family: 'Alex Brush', cursive;
+  font-size: 2.5rem;
+  color: #0a1a3f;
+  font-weight: 1000;
+  letter-spacing: 2px; /* gives it a flowing style */
+}
+
