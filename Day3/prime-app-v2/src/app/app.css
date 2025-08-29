@@ -1,0 +1,46 @@
+/* Menubar */
+.p-menubar {
+  background-color: var(--primary-color);
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.app-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #141010;
+}
+
+/* Drawer Menu */
+.drawer-menu {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+.drawer-menu li {
+  padding: 0.5rem 0;
+}
+
+.drawer-menu li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.drawer-menu li a i {
+  margin-right: 0.5rem;
+}
+
+.drawer-menu li.active a,
+.drawer-menu li a:hover {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Main content */
+.app-main {
+  padding: 1.5rem;
+}

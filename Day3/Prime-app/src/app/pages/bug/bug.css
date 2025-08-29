@@ -1,0 +1,47 @@
+.bugs {
+  padding: 1rem;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #343a40;
+}
+
+.bugs-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.bugs-table th, .bugs-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.bugs-table th {
+  background: #007bff;
+  color: white;
+  font-weight: 600;
+}
+
+.bugs-table tr:hover {
+  background: #f9f9f9;
+}
+
+.badge {
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: white;
+}
+
+.badge.open { background-color: #dc3545; }
+.badge.closed { background-color: #28a745; }
+.badge.high { background-color: #ff5722; }
+.badge.medium { background-color: #ffc107; color: #333; }
