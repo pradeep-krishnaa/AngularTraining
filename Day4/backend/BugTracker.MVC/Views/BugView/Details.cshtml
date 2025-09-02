@@ -1,0 +1,17 @@
+﻿@model BugTracker.MVC.Models.BugViewModel
+
+@{
+    ViewData["Title"] = "Bug Details";
+}
+
+<h2>Bug Details</h2>
+
+<div class="card p-3">
+    <h4>@Model.Title</h4>
+    <p><strong>Description:</strong> @Model.Description</p>
+    <p><strong>Status:</strong> @Model.Status</p>
+    <p><strong>Created At:</strong> @Model.CreatedAt.ToString("f")</p>
+    <p><strong>Project Id:</strong> @Model.ProjectId</p>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary mt-3">Back to List</a>

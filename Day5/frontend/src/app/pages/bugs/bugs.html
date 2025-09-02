@@ -1,0 +1,71 @@
+<div class="bugs-container">
+  <p-card header="Bug Dashboard" styleClass="bugs-card">
+    <div class="bugs-header">
+      <h2>Bugs</h2>
+      <p-button 
+        label="Refresh" 
+        icon="pi pi-refresh" 
+        (onClick)="loadBugs()"
+        [loading]="loading"
+        styleClass="p-button-outlined">
+      </p-button>
+    </div>
+
+    <div *ngIf="loading" class="loading-container">
+      <p-progressSpinner></p-progressSpinner>
+      <p>Loading bugs...</p>
+    </div>
+
+    <div *ngIf="!loading && bugs.length > 0">
+      <p-table 
+        [value]="bugs" 
+        [tableStyle]="{'min-width': '50rem'}"
+        styleClass="p-datatable-sm">
+        
+        <ng-template pTemplate="header">
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Created Date</th>
+            <th>Project ID</th>
+          </tr>
+        </ng-template>
+        
+        <ng-template pTemplate="body" let-bug>
+          <tr>
+            <td>{{bug.id}}</td>
+            <td>{{bug.title}}</td>
+            <td>{{bug.description}}</td>
+            <td>
+              <span class="status-badge" [class]="'status-' + bug.status.toLowerCase()">
+                {{bug.status}}
+              </span>
+            </td>
+            <td>{{bug.createdAt | date:'short'}}</td>
+            <td>{{bug.projectId}}</td>
+          </tr>
+        </ng-template>
+        
+        <ng-template pTemplate="emptymessage">
+          <tr>
+            <td colspan="6" class="text-center">No bugs found</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+
+    <div *ngIf="!loading && bugs.length === 0 && !error" class="no-bugs">
+      <p>No bugs available</p>
+    </div>
+
+    <div *ngIf="error" class="error-message">
+      <p-message 
+        severity="error" 
+        [text]="error"
+        styleClass="error-msg">
+      </p-message>
+    </div>
+  </p-card>
+</div>

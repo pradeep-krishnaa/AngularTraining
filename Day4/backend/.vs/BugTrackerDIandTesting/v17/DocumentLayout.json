@@ -1,0 +1,817 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|solutionrelative:bugtracker.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|solutionrelative:bugtracker.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\dtos\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\dtos\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|solutionrelative:bugtracker.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.api\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|solutionrelative:bugtracker.api\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.api\\controllers\\bugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|solutionrelative:bugtracker.api\\controllers\\bugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.api\\bugtracker.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|solutionrelative:bugtracker.api\\bugtracker.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.api\\extensions\\exceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|solutionrelative:bugtracker.api\\extensions\\exceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.api\\middleware\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|solutionrelative:bugtracker.api\\middleware\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\dtos\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\dtos\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1B4B4CD-F442-43B9-AC07-E0253FB555E6}|BugTracker.Application\\BugTracker.Application.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.application\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1B4B4CD-F442-43B9-AC07-E0253FB555E6}|BugTracker.Application\\BugTracker.Application.csproj|solutionrelative:bugtracker.application\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\bugtracker.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\bugtracker.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1B4B4CD-F442-43B9-AC07-E0253FB555E6}|BugTracker.Application\\BugTracker.Application.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.application\\services\\bugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1B4B4CD-F442-43B9-AC07-E0253FB555E6}|BugTracker.Application\\BugTracker.Application.csproj|solutionrelative:bugtracker.application\\services\\bugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\exceptions\\unauthorizedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\exceptions\\unauthorizedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\exceptions\\conflictexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\exceptions\\conflictexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\exceptions\\forbiddenexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\exceptions\\forbiddenexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17966E36-1D68-46C0-981F-4D468D294F93}|BugTracker.MVC\\BugTracker.MVC.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17966E36-1D68-46C0-981F-4D468D294F93}|BugTracker.MVC\\BugTracker.MVC.csproj|solutionrelative:bugtracker.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.api\\bugtracker.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|solutionrelative:bugtracker.api\\bugtracker.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17966E36-1D68-46C0-981F-4D468D294F93}|BugTracker.MVC\\BugTracker.MVC.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17966E36-1D68-46C0-981F-4D468D294F93}|BugTracker.MVC\\BugTracker.MVC.csproj|solutionrelative:bugtracker.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17966E36-1D68-46C0-981F-4D468D294F93}|BugTracker.MVC\\BugTracker.MVC.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.mvc\\controllers\\bugviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17966E36-1D68-46C0-981F-4D468D294F93}|BugTracker.MVC\\BugTracker.MVC.csproj|solutionrelative:bugtracker.mvc\\controllers\\bugviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17966E36-1D68-46C0-981F-4D468D294F93}|BugTracker.MVC\\BugTracker.MVC.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.mvc\\views\\bugview\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17966E36-1D68-46C0-981F-4D468D294F93}|BugTracker.MVC\\BugTracker.MVC.csproj|solutionrelative:bugtracker.mvc\\views\\bugview\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17966E36-1D68-46C0-981F-4D468D294F93}|BugTracker.MVC\\BugTracker.MVC.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.mvc\\views\\bugview\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17966E36-1D68-46C0-981F-4D468D294F93}|BugTracker.MVC\\BugTracker.MVC.csproj|solutionrelative:bugtracker.mvc\\views\\bugview\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17966E36-1D68-46C0-981F-4D468D294F93}|BugTracker.MVC\\BugTracker.MVC.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.mvc\\models\\bugviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17966E36-1D68-46C0-981F-4D468D294F93}|BugTracker.MVC\\BugTracker.MVC.csproj|solutionrelative:bugtracker.mvc\\models\\bugviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\dtos\\bugresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\dtos\\bugresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E039A29-C22F-4391-8507-2A9183E6ED70}|BugTracker.Infrastructure\\BugTracker.Infrastructure.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.infrastructure\\repositories\\bugrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E039A29-C22F-4391-8507-2A9183E6ED70}|BugTracker.Infrastructure\\BugTracker.Infrastructure.csproj|solutionrelative:bugtracker.infrastructure\\repositories\\bugrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E039A29-C22F-4391-8507-2A9183E6ED70}|BugTracker.Infrastructure\\BugTracker.Infrastructure.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.infrastructure\\repositories\\projectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E039A29-C22F-4391-8507-2A9183E6ED70}|BugTracker.Infrastructure\\BugTracker.Infrastructure.csproj|solutionrelative:bugtracker.infrastructure\\repositories\\projectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\entities\\bug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\entities\\bug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E039A29-C22F-4391-8507-2A9183E6ED70}|BugTracker.Infrastructure\\BugTracker.Infrastructure.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E039A29-C22F-4391-8507-2A9183E6ED70}|BugTracker.Infrastructure\\BugTracker.Infrastructure.csproj|solutionrelative:bugtracker.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E039A29-C22F-4391-8507-2A9183E6ED70}|BugTracker.Infrastructure\\BugTracker.Infrastructure.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.infrastructure\\bugtracker.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7E039A29-C22F-4391-8507-2A9183E6ED70}|BugTracker.Infrastructure\\BugTracker.Infrastructure.csproj|solutionrelative:bugtracker.infrastructure\\bugtracker.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\dtos\\bugrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\dtos\\bugrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\interfaces\\iprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\interfaces\\iprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\interfaces\\ibugrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\interfaces\\ibugrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\interfaces\\ibugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\interfaces\\ibugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\dtos\\projectrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\dtos\\projectrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E039A29-C22F-4391-8507-2A9183E6ED70}|BugTracker.Infrastructure\\BugTracker.Infrastructure.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E039A29-C22F-4391-8507-2A9183E6ED70}|BugTracker.Infrastructure\\BugTracker.Infrastructure.csproj|solutionrelative:bugtracker.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\dtos\\projectresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\dtos\\projectresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\interfaces\\iprojectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\interfaces\\iprojectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76450222-A5E1-4878-8386-9D707CECB7B5}|BugTracker.Test\\BugTracker.Test.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.test\\services\\bugservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76450222-A5E1-4878-8386-9D707CECB7B5}|BugTracker.Test\\BugTracker.Test.csproj|solutionrelative:bugtracker.test\\services\\bugservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76450222-A5E1-4878-8386-9D707CECB7B5}|BugTracker.Test\\BugTracker.Test.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.test\\bugtracker.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{76450222-A5E1-4878-8386-9D707CECB7B5}|BugTracker.Test\\BugTracker.Test.csproj|solutionrelative:bugtracker.test\\bugtracker.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76450222-A5E1-4878-8386-9D707CECB7B5}|BugTracker.Test\\BugTracker.Test.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76450222-A5E1-4878-8386-9D707CECB7B5}|BugTracker.Test\\BugTracker.Test.csproj|solutionrelative:bugtracker.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{28B3C757-285C-42EA-AC35-736ACD90976A}|BugTracker.API\\BugTracker.API.csproj|solutionrelative:bugtracker.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1B4B4CD-F442-43B9-AC07-E0253FB555E6}|BugTracker.Application\\BugTracker.Application.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1B4B4CD-F442-43B9-AC07-E0253FB555E6}|BugTracker.Application\\BugTracker.Application.csproj|solutionrelative:bugtracker.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8C50E8-0A72-47B6-A607-177996B4F758}|BugTracker.Core\\BugTracker.Core.csproj|solutionrelative:bugtracker.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E039A29-C22F-4391-8507-2A9183E6ED70}|BugTracker.Infrastructure\\BugTracker.Infrastructure.csproj|c:\\users\\pradkris\\source\\repos\\dotnettraining\\day21\\bugtrackerdiandtesting\\bugtracker.infrastructure\\migrations\\20250819065227_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E039A29-C22F-4391-8507-2A9183E6ED70}|BugTracker.Infrastructure\\BugTracker.Infrastructure.csproj|solutionrelative:bugtracker.infrastructure\\migrations\\20250819065227_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "BugTracker.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "BugTracker.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T05:27:17.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthResponse.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\DTOs\\AuthResponse.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\DTOs\\AuthResponse.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\DTOs\\AuthResponse.cs",
+              "RelativeToolTip": "BugTracker.Core\\DTOs\\AuthResponse.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T05:06:08.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\DTOs\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\DTOs\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\DTOs\\LoginRequest.cs",
+              "RelativeToolTip": "BugTracker.Core\\DTOs\\LoginRequest.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T05:05:22.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\Program.cs",
+              "RelativeDocumentMoniker": "BugTracker.API\\Program.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\Program.cs",
+              "RelativeToolTip": "BugTracker.API\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:37:42.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\appsettings.json",
+              "RelativeDocumentMoniker": "BugTracker.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\appsettings.json",
+              "RelativeToolTip": "BugTracker.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-07T05:45:01.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BugController.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\Controllers\\BugController.cs",
+              "RelativeDocumentMoniker": "BugTracker.API\\Controllers\\BugController.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\Controllers\\BugController.cs",
+              "RelativeToolTip": "BugTracker.API\\Controllers\\BugController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:48:27.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "BugTracker.API\\Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "BugTracker.API\\Controllers\\ProjectController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T05:29:07.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ExceptionMiddlewareExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\Extensions\\ExceptionMiddlewareExtensions.cs",
+              "RelativeDocumentMoniker": "BugTracker.API\\Extensions\\ExceptionMiddlewareExtensions.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\Extensions\\ExceptionMiddlewareExtensions.cs",
+              "RelativeToolTip": "BugTracker.API\\Extensions\\ExceptionMiddlewareExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T05:44:34.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "BugTracker.Core\\Exceptions\\NotFoundException.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T04:55:32.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BugTracker.API.csproj",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\BugTracker.API.csproj",
+              "RelativeDocumentMoniker": "BugTracker.API\\BugTracker.API.csproj",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\BugTracker.API.csproj",
+              "RelativeToolTip": "BugTracker.API\\BugTracker.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-20T05:13:41.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProjectService.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Application\\Services\\ProjectService.cs",
+              "RelativeDocumentMoniker": "BugTracker.Application\\Services\\ProjectService.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Application\\Services\\ProjectService.cs",
+              "RelativeToolTip": "BugTracker.Application\\Services\\ProjectService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T05:16:59.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ErrorResponse.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\DTOs\\ErrorResponse.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\DTOs\\ErrorResponse.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\DTOs\\ErrorResponse.cs",
+              "RelativeToolTip": "BugTracker.Core\\DTOs\\ErrorResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T04:37:30.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GlobalExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\Middleware\\GlobalExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "BugTracker.API\\Middleware\\GlobalExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\Middleware\\GlobalExceptionMiddleware.cs",
+              "RelativeToolTip": "BugTracker.API\\Middleware\\GlobalExceptionMiddleware.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwE0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T05:14:07.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BugTracker.Core.csproj",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\BugTracker.Core.csproj",
+              "RelativeDocumentMoniker": "BugTracker.Core\\BugTracker.Core.csproj",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\BugTracker.Core.csproj",
+              "RelativeToolTip": "BugTracker.Core\\BugTracker.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-07T04:43:06.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BugService.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Application\\Services\\BugService.cs",
+              "RelativeDocumentMoniker": "BugTracker.Application\\Services\\BugService.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Application\\Services\\BugService.cs",
+              "RelativeToolTip": "BugTracker.Application\\Services\\BugService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwDQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:48:01.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ValidationException.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Exceptions\\ValidationException.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\Exceptions\\ValidationException.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Exceptions\\ValidationException.cs",
+              "RelativeToolTip": "BugTracker.Core\\Exceptions\\ValidationException.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T05:05:25.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UnauthorizedException.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Exceptions\\UnauthorizedException.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\Exceptions\\UnauthorizedException.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Exceptions\\UnauthorizedException.cs",
+              "RelativeToolTip": "BugTracker.Core\\Exceptions\\UnauthorizedException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T05:11:48.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ConflictException.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Exceptions\\ConflictException.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\Exceptions\\ConflictException.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Exceptions\\ConflictException.cs",
+              "RelativeToolTip": "BugTracker.Core\\Exceptions\\ConflictException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T05:12:03.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ForbiddenException.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Exceptions\\ForbiddenException.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\Exceptions\\ForbiddenException.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Exceptions\\ForbiddenException.cs",
+              "RelativeToolTip": "BugTracker.Core\\Exceptions\\ForbiddenException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T05:12:16.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.MVC\\Program.cs",
+              "RelativeDocumentMoniker": "BugTracker.MVC\\Program.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.MVC\\Program.cs",
+              "RelativeToolTip": "BugTracker.MVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T06:57:37.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "BugTracker.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Infrastructure\\BugTracker.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "BugTracker.Infrastructure\\BugTracker.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Infrastructure\\BugTracker.Infrastructure.csproj",
+              "RelativeToolTip": "BugTracker.Infrastructure\\BugTracker.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-07T04:46:12.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "BugTracker.Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "BugTracker.Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:46:55.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Bug.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Entities\\Bug.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\Entities\\Bug.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Entities\\Bug.cs",
+              "RelativeToolTip": "BugTracker.Core\\Entities\\Bug.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:44:34.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BugTracker.API.http",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\BugTracker.API.http",
+              "RelativeDocumentMoniker": "BugTracker.API\\BugTracker.API.http",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\BugTracker.API.http",
+              "RelativeToolTip": "BugTracker.API\\BugTracker.API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-08-07T06:16:32.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BugViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.MVC\\Models\\BugViewModel.cs",
+              "RelativeDocumentMoniker": "BugTracker.MVC\\Models\\BugViewModel.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.MVC\\Models\\BugViewModel.cs",
+              "RelativeToolTip": "BugTracker.MVC\\Models\\BugViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T07:01:00.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.MVC\\Views\\BugView\\Index.cshtml",
+              "RelativeDocumentMoniker": "BugTracker.MVC\\Views\\BugView\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.MVC\\Views\\BugView\\Index.cshtml",
+              "RelativeToolTip": "BugTracker.MVC\\Views\\BugView\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-19T07:08:37.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.MVC\\Views\\BugView\\Details.cshtml",
+              "RelativeDocumentMoniker": "BugTracker.MVC\\Views\\BugView\\Details.cshtml",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.MVC\\Views\\BugView\\Details.cshtml",
+              "RelativeToolTip": "BugTracker.MVC\\Views\\BugView\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-19T07:08:56.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BugTracker.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BugTracker.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-19T07:12:40.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BugViewController.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.MVC\\Controllers\\BugViewController.cs",
+              "RelativeDocumentMoniker": "BugTracker.MVC\\Controllers\\BugViewController.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.MVC\\Controllers\\BugViewController.cs",
+              "RelativeToolTip": "BugTracker.MVC\\Controllers\\BugViewController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAADwvy8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T07:10:09.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Entities\\Project.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\Entities\\Project.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Entities\\Project.cs",
+              "RelativeToolTip": "BugTracker.Core\\Entities\\Project.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:44:44.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BugResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\DTOs\\BugResponseDTO.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\DTOs\\BugResponseDTO.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\DTOs\\BugResponseDTO.cs",
+              "RelativeToolTip": "BugTracker.Core\\DTOs\\BugResponseDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:44:26.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "20250819065227_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Infrastructure\\Migrations\\20250819065227_InitialCreate.cs",
+              "RelativeDocumentMoniker": "BugTracker.Infrastructure\\Migrations\\20250819065227_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Infrastructure\\Migrations\\20250819065227_InitialCreate.cs",
+              "RelativeToolTip": "BugTracker.Infrastructure\\Migrations\\20250819065227_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T06:52:27.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BugRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Infrastructure\\Repositories\\BugRepository.cs",
+              "RelativeDocumentMoniker": "BugTracker.Infrastructure\\Repositories\\BugRepository.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Infrastructure\\Repositories\\BugRepository.cs",
+              "RelativeToolTip": "BugTracker.Infrastructure\\Repositories\\BugRepository.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAADsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:47:23.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ProjectRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Infrastructure\\Repositories\\ProjectRepository.cs",
+              "RelativeDocumentMoniker": "BugTracker.Infrastructure\\Repositories\\ProjectRepository.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Infrastructure\\Repositories\\ProjectRepository.cs",
+              "RelativeToolTip": "BugTracker.Infrastructure\\Repositories\\ProjectRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T05:19:33.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IBugRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Interfaces\\IBugRepository.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\Interfaces\\IBugRepository.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Interfaces\\IBugRepository.cs",
+              "RelativeToolTip": "BugTracker.Core\\Interfaces\\IBugRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:45:39.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "BugRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\DTOs\\BugRequestDTO.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\DTOs\\BugRequestDTO.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\DTOs\\BugRequestDTO.cs",
+              "RelativeToolTip": "BugTracker.Core\\DTOs\\BugRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:44:07.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IProjectService.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Interfaces\\IProjectService.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\Interfaces\\IProjectService.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Interfaces\\IProjectService.cs",
+              "RelativeToolTip": "BugTracker.Core\\Interfaces\\IProjectService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T05:14:11.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "BugTracker.Core\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:45:49.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IBugService.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Interfaces\\IBugService.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\Interfaces\\IBugService.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Interfaces\\IBugService.cs",
+              "RelativeToolTip": "BugTracker.Core\\Interfaces\\IBugService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:45:27.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ProjectRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\DTOs\\ProjectRequestDTO.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\DTOs\\ProjectRequestDTO.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\DTOs\\ProjectRequestDTO.cs",
+              "RelativeToolTip": "BugTracker.Core\\DTOs\\ProjectRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T05:12:02.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "BugTracker.Infrastructure\\Class1.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Infrastructure\\Class1.cs",
+              "RelativeToolTip": "BugTracker.Infrastructure\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:35:22.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ProjectResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\DTOs\\ProjectResponseDTO.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\DTOs\\ProjectResponseDTO.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\DTOs\\ProjectResponseDTO.cs",
+              "RelativeToolTip": "BugTracker.Core\\DTOs\\ProjectResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T05:12:14.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IProjectRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Interfaces\\IProjectRepository.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\Interfaces\\IProjectRepository.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Interfaces\\IProjectRepository.cs",
+              "RelativeToolTip": "BugTracker.Core\\Interfaces\\IProjectRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T05:13:54.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "BugServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Test\\Services\\BugServiceTests.cs",
+              "RelativeDocumentMoniker": "BugTracker.Test\\Services\\BugServiceTests.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Test\\Services\\BugServiceTests.cs",
+              "RelativeToolTip": "BugTracker.Test\\Services\\BugServiceTests.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAA4wGMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T04:35:46.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "BugTracker.Test.csproj",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Test\\BugTracker.Test.csproj",
+              "RelativeDocumentMoniker": "BugTracker.Test\\BugTracker.Test.csproj",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Test\\BugTracker.Test.csproj",
+              "RelativeToolTip": "BugTracker.Test\\BugTracker.Test.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-08T04:29:23.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Test\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "BugTracker.Test\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Test\\UnitTest1.cs",
+              "RelativeToolTip": "BugTracker.Test\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T04:28:55.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "BugTracker.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "BugTracker.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-07T06:03:32.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Application\\Class1.cs",
+              "RelativeDocumentMoniker": "BugTracker.Application\\Class1.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Application\\Class1.cs",
+              "RelativeToolTip": "BugTracker.Application\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:36:55.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Class1.cs",
+              "RelativeDocumentMoniker": "BugTracker.Core\\Class1.cs",
+              "ToolTip": "C:\\Users\\pradkris\\source\\repos\\DotNetTraining\\Day21\\BugTrackerDIandTesting\\BugTracker.Core\\Class1.cs",
+              "RelativeToolTip": "BugTracker.Core\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:34:34.036Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

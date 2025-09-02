@@ -1,0 +1,64 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+</head>
+
+<nav class="navbar">
+  <div class="nav-content">
+    <div class="nav-left">
+      <div class="signature">&lt; Pradeep Krishnaa /&gt;</div>
+    </div>
+    
+    <!-- Desktop Navigation -->
+    <ul class="nav-links desktop-nav">
+      <li>
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <i class="pi pi-home"></i> Home
+        </a>
+      </li>
+      <li>
+        <a routerLink="/education" routerLinkActive="active">
+          <i class="pi pi-graduation-cap"></i> Education
+        </a>
+      </li>
+      <li>
+        <a routerLink="/projects" routerLinkActive="active">
+          <i class="pi pi-briefcase"></i> Projects
+        </a>
+      </li>
+      <li>
+        <a routerLink="/contact" routerLinkActive="active">
+          <i class="pi pi-envelope"></i> Contact
+        </a>
+      </li>
+    </ul>
+    
+    <!-- Mobile Menu Button -->
+    <div class="mobile-menu">
+      <p-button 
+        icon="pi pi-bars" 
+        (click)="sidebarVisible = true"
+        styleClass="p-button-text p-button-rounded"
+        class="menu-button"
+      ></p-button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Sidebar -->
+<p-sidebar 
+  [(visible)]="sidebarVisible" 
+  position="right" 
+  styleClass="mobile-sidebar"
+  [modal]="true"
+  [dismissible]="true"
+>
+  <div class="sidebar-header">
+    <h3><i class="pi pi-user"></i> Menu</h3>
+  </div>
+  
+  <p-menu 
+    [model]="menuItems" 
+    styleClass="sidebar-menu"
+    (click)="sidebarVisible = false"
+  ></p-menu>
+</p-sidebar>

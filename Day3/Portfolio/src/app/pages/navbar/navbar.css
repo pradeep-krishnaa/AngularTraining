@@ -1,0 +1,151 @@
+.navbar {
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.signature {
+  font-family: 'Alex Brush', cursive;
+  font-size: 2.5rem;
+  color: #0a1a3f;
+  font-weight: 1000;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: 500;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00509e;
+  background: rgba(0, 80, 158, 0.1);
+}
+
+.nav-links a.active {
+  color: #00509e;
+  background: rgba(0, 80, 158, 0.1);
+  border-bottom: 2px solid #003366;
+}
+
+.nav-links i {
+  font-size: 1.1rem;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.menu-button {
+  color: #003366 !important;
+}
+
+/* Mobile Sidebar Styles */
+.sidebar-header {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+.sidebar-header h3 {
+  color: #003366;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-content {
+    padding: 1rem 2rem;
+  }
+  
+  .desktop-nav {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: block;
+  }
+  
+  .signature {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-content {
+    padding: 1rem;
+  }
+  
+  .signature {
+    font-size: 1.8rem;
+  }
+}
+
+/* PrimeNG Sidebar Customizations */
+:host ::ng-deep .mobile-sidebar {
+  width: 280px;
+}
+
+:host ::ng-deep .mobile-sidebar .p-sidebar-content {
+  padding: 0;
+}
+
+:host ::ng-deep .sidebar-menu .p-menu-list {
+  padding: 0;
+}
+
+:host ::ng-deep .sidebar-menu .p-menuitem {
+  border-bottom: 1px solid #f1f5f9;
+}
+
+:host ::ng-deep .sidebar-menu .p-menuitem-link {
+  padding: 1rem 1.5rem;
+  color: #003366;
+  font-weight: 500;
+}
+
+:host ::ng-deep .sidebar-menu .p-menuitem-link:hover {
+  background: rgba(0, 80, 158, 0.1);
+  color: #00509e;
+}
+
+:host ::ng-deep .sidebar-menu .p-menuitem-icon {
+  margin-right: 0.75rem;
+  color: #003366;
+}
+
