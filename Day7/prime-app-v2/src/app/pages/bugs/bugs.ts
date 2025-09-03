@@ -144,5 +144,16 @@ priorities = [
     });
   }
 
+  getStatusClass(status: string): string {
+    if (!status) return '';
+    return 'status-' + status.toLowerCase().replace(/\s+/g, '-');
+  }
+
+  getPriorityClass(priority: string): string {
+    if (!priority) return '';
+    return 'priority-' + priority.toLowerCase().replace(/\s+/g, '-');
+  }
+
+
 
 }

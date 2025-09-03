@@ -21,6 +21,7 @@
         <h2>Bugs</h2>
 
         <div class="filter-group">
+          <!-- Status Filter -->
           <p-dropdown
             [options]="statuses"
             [(ngModel)]="selectedStatus"
@@ -31,6 +32,7 @@
             [style]="{'width':'180px'}">
           </p-dropdown>
 
+          <!-- Priority Filter -->
           <p-dropdown
             [options]="priorities"
             [(ngModel)]="selectedPriority"
@@ -41,6 +43,7 @@
             [style]="{'width':'180px'}">
           </p-dropdown>
 
+          <!-- Refresh Button -->
           <p-button
             label="Refresh"
             icon="pi pi-refresh"
@@ -51,11 +54,13 @@
         </div>
       </div>
 
+      <!-- Loading Spinner -->
       <div *ngIf="loading" class="loading-container">
         <p-progressSpinner></p-progressSpinner>
         <p>Loading bugs...</p>
       </div>
 
+      <!-- Bug Table -->
       <div *ngIf="!loading && bugs.length > 0">
         <p-table 
           [value]="filteredBugs" 
@@ -134,22 +139,22 @@
             </tr>
           </ng-template>
 
-
           <ng-template pTemplate="body" let-bug>
             <tr>
               <td>{{bug.id}}</td>
               <td>{{bug.title}}</td>
               <td>{{bug.description}}</td>
               <td>
-                <span class="status-badge" [class]="'status-' + bug.status.toLowerCase()">
+                <span class="status-badge" [class]="getStatusClass(bug.status)">
                   {{bug.status}}
                 </span>
               </td>
               <td>
-                <span [ngClass]="'priority-' + bug.priority.toLowerCase()">
+                <span [ngClass]="getPriorityClass(bug.priority)">
                   {{bug.priority}}
                 </span>
               </td>
+
               <td>{{bug.createdAt | date:'short'}}</td>
               <td>{{bug.projectId}}</td>
             </tr>
@@ -163,10 +168,12 @@
         </p-table>
       </div>
 
+      <!-- No Bugs -->
       <div *ngIf="!loading && bugs.length === 0 && !error" class="no-bugs">
         <p>No bugs available</p>
       </div>
 
+      <!-- Error Message -->
       <div *ngIf="error" class="error-message">
         <p-message severity="error" [text]="error" styleClass="error-msg"></p-message>
       </div>
