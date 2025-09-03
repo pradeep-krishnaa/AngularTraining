@@ -1,0 +1,127 @@
+<div class="bugs-container">
+  <p-card header="Bug Dashboard" [styleClass]="'bugs-card'">
+    <!-- Authentication Check -->
+    <div *ngIf="!isAuthenticated" class="auth-required">
+      <div class="auth-message">
+        <i class="pi pi-lock" style="font-size: 3rem; color: #667eea;"></i>
+        <h3>Authentication Required</h3>
+        <p>You must be logged in to view bugs.</p>
+        <p-button 
+          label="Go to Login" 
+          icon="pi pi-sign-in" 
+          (onClick)="goToLogin()"
+          styleClass="p-button-primary">
+        </p-button>
+      </div>
+    </div>
+
+    <!-- Authenticated Content -->
+    <div *ngIf="isAuthenticated">
+      <div class="bugs-header">
+        <h2>Bugs</h2>
+
+        <div class="filter-group">
+          <!-- Status Filter -->
+          <p-dropdown
+            [options]="statuses"
+            [(ngModel)]="selectedStatus"
+            optionLabel="label"
+            optionValue="value"
+            placeholder="Filter by Status"
+            (onChange)="filterBugs()"
+            [style]="{'width':'180px'}">
+          </p-dropdown>
+
+
+          <!-- Priority Filter -->
+          <p-dropdown
+            [options]="priorities"
+            [(ngModel)]="selectedPriority"
+            optionLabel="label"
+            optionValue="value"
+            placeholder="Filter by Priority"
+            (onChange)="filterBugs()"
+            [style]="{'width':'180px'}">
+          </p-dropdown>
+
+
+          <!-- Refresh Button -->
+          <p-button
+            label="Refresh"
+            icon="pi pi-refresh"
+            (onClick)="loadBugs()"
+            [loading]="loading"
+            styleClass="p-button-outlined">
+          </p-button>
+        </div>
+      </div>
+
+      <!-- Loading -->
+      <div *ngIf="loading" class="loading-container">
+        <p-progressSpinner></p-progressSpinner>
+        <p>Loading bugs...</p>
+      </div>
+
+      <!-- Table -->
+      <div *ngIf="!loading && bugs.length > 0">
+        <p-table 
+          [value]="filteredBugs" 
+          [tableStyle]="{'min-width': '60rem'}"
+          styleClass="p-datatable-sm">
+
+          <ng-template pTemplate="header">
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Status</th>
+              <th>Priority</th>
+              <th>Created Date</th>
+              <th>Project ID</th>
+            </tr>
+          </ng-template>
+
+          <ng-template pTemplate="body" let-bug>
+            <tr>
+              <td>{{bug.id}}</td>
+              <td>{{bug.title}}</td>
+              <td>{{bug.description}}</td>
+              <td>
+                <span class="status-badge" [class]="'status-' + bug.status.toLowerCase()">
+                  {{bug.status}}
+                </span>
+              </td>
+              <td>
+                <span [ngClass]="'priority-' + bug.priority.toLowerCase()">
+                  {{bug.priority}}
+                </span>
+              </td>
+              <td>{{bug.createdAt | date:'short'}}</td>
+              <td>{{bug.projectId}}</td>
+            </tr>
+          </ng-template>
+
+          <ng-template pTemplate="emptymessage">
+            <tr>
+              <td colspan="7" class="text-center">No bugs found</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+
+      <!-- No Bugs -->
+      <div *ngIf="!loading && bugs.length === 0 && !error" class="no-bugs">
+        <p>No bugs available</p>
+      </div>
+
+      <!-- Error -->
+      <div *ngIf="error" class="error-message">
+        <p-message 
+          severity="error" 
+          [text]="error"
+          styleClass="error-msg">
+        </p-message>
+      </div>
+    </div>
+  </p-card>
+</div>
