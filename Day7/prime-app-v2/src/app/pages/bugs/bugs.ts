@@ -36,6 +36,7 @@ export class BugsComponent implements OnInit {
   error: string = '';
   loading: boolean = false;
   isAuthenticated: boolean = false;
+  sortDirection: { [key: string]: 'asc' | 'desc' } = {}; // track sort state per column
 
   statuses = [
   { label: 'All Statuses', value: null },
@@ -53,6 +54,8 @@ priorities = [
 
   selectedStatus: string | null = null;
   selectedPriority: string | null = null;
+  private statusOrder = ['Open', 'In Progress', 'Closed'];
+  private priorityOrder = ['Low', 'Medium', 'High'];
 
   constructor(
     private bugService: BugService,
@@ -79,25 +82,34 @@ priorities = [
     this.loading = true;
     this.error = '';
 
+    // 🔹 Reset filters and sorting
+    this.selectedStatus = null;
+    this.selectedPriority = null;
+    this.sortDirection = {}; // reset sorting state
+
     this.bugService.getBugs().subscribe({
       next: (bugs) => {
         this.bugs = bugs;
-        this.filteredBugs = bugs;
+        this.filteredBugs = [...bugs]; // fresh data
         this.loading = false;
       },
       error: (err) => {
         this.error = err.message;
         this.loading = false;
 
+        // If session expired, redirect to login
         if (
           err.message.includes('Session expired') ||
           err.message.includes('must be logged in')
         ) {
-          setTimeout(() => this.router.navigate(['/login']), 2000);
+          setTimeout(() => {
+            this.router.navigate(['/login']);
+          }, 2000);
         }
       }
     });
   }
+
 
   goToLogin() {
     this.router.navigate(['/login']);
@@ -108,6 +120,27 @@ priorities = [
       const statusMatch = this.selectedStatus ? bug.status === this.selectedStatus : true;
       const priorityMatch = this.selectedPriority ? bug.priority === this.selectedPriority : true;
       return statusMatch && priorityMatch;
+    });
+  }
+  sortBugs(column: keyof Bug) {
+    // Toggle sort direction
+    this.sortDirection[column] = this.sortDirection[column] === 'asc' ? 'desc' : 'asc';
+    const direction = this.sortDirection[column];
+
+    this.filteredBugs.sort((a, b) => {
+      let compare = 0;
+
+      if (column === 'status') {
+        compare = this.statusOrder.indexOf(a.status) - this.statusOrder.indexOf(b.status);
+      } else if (column === 'priority') {
+        compare = this.priorityOrder.indexOf(a.priority) - this.priorityOrder.indexOf(b.priority);
+      } else {
+        const valA = (a[column] ?? '').toString().toLowerCase();
+        const valB = (b[column] ?? '').toString().toLowerCase();
+        compare = valA.localeCompare(valB);
+      }
+
+      return direction === 'asc' ? compare : -compare;
     });
   }
 
