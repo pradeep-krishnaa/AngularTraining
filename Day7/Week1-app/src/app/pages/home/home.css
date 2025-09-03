@@ -1,0 +1,36 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px); /* Deduct menubar height */
+  background: linear-gradient(135deg, #1976d2, #42a5f5);
+  padding: 20px;
+}
+
+p-card {
+  width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.home-content {
+  text-align: center;
+  padding: 30px;
+}
+
+.home-content h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #1976d2;
+}
+
+.home-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+button {
+  background: #1976d2 !important;
+  border: none !important;
+}

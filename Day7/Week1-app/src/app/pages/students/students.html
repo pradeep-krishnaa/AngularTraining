@@ -1,0 +1,60 @@
+<p-card header="Registered Students" class="shadow-md border-round-lg">
+  <p-table
+    [value]="students"
+    selectionMode="single"
+    (onRowSelect)="showStudentDialog($event.data)"
+    class="p-datatable-striped"
+  >
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Department</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-student>
+      <tr [pSelectableRow]="student">
+        <td>{{ student.name }}</td>
+        <td>{{ student.email }}</td>
+        <td>{{ student.age }}</td>
+        <td>{{ student.department }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</p-card>
+
+<!-- Edit Dialog -->
+<p-dialog
+  [(visible)]="dialogVisible"
+  [modal]="true"
+  header="Edit Student"
+  [closable]="true"
+  [style]="{ width: '400px' }"
+>
+  <form [formGroup]="editForm" class="p-fluid">
+    <div class="field">
+      <label>Name</label>
+      <input pInputText formControlName="name" />
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <input pInputText formControlName="email" />
+    </div>
+    <div class="field">
+      <label>Age</label>
+      <input pInputText type="number" formControlName="age" />
+    </div>
+    <div class="field">
+      <label>Department</label>
+      <p-dropdown [options]="departments" optionLabel="label" optionValue="value" formControlName="department">
+      </p-dropdown>
+    </div>
+  </form>
+  <ng-template pTemplate="footer">
+    <div class="flex justify-content-end gap-2">
+      <button pButton label="Cancel" icon="pi pi-times" class="p-button-text" (click)="dialogVisible=false"></button>
+      <button pButton label="Save" icon="pi pi-check" class="p-button-success"></button>
+    </div>
+  </ng-template>
+</p-dialog>

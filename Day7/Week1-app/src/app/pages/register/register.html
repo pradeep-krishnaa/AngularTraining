@@ -1,0 +1,65 @@
+<p-card header="Student Registration" class="p-mb-4 shadow-md border-round-lg">
+  <form [formGroup]="studentForm" (ngSubmit)="onSubmit()" class="p-fluid">
+    <!-- Name -->
+    <div class="field">
+      <label for="name">Name</label>
+      <input
+        pInputText
+        id="name"
+        formControlName="name"
+        [ngClass]="{ 'p-invalid': studentForm.get('name')?.invalid && studentForm.get('name')?.touched }"
+      />
+      <small class="p-error" *ngIf="studentForm.get('name')?.invalid && studentForm.get('name')?.touched">
+        Name is required (min 3 characters)
+      </small>
+    </div>
+
+    <!-- Email -->
+    <div class="field">
+      <label for="email">Email</label>
+      <input
+        pInputText
+        id="email"
+        formControlName="email"
+        [ngClass]="{ 'p-invalid': studentForm.get('email')?.invalid && studentForm.get('email')?.touched }"
+      />
+      <small class="p-error" *ngIf="studentForm.get('email')?.invalid && studentForm.get('email')?.touched">
+        Enter a valid email
+      </small>
+    </div>
+
+    <!-- Age -->
+    <div class="field">
+      <label for="age">Age</label>
+      <input
+        pInputText
+        type="number"
+        id="age"
+        formControlName="age"
+        [ngClass]="{ 'p-invalid': studentForm.get('age')?.invalid && studentForm.get('age')?.touched }"
+      />
+      <small class="p-error" *ngIf="studentForm.get('age')?.invalid && studentForm.get('age')?.touched">
+        Age must be between 16 and 45
+      </small>
+    </div>
+
+    <!-- Department -->
+    <div class="field">
+      <label for="department">Department</label>
+      <p-dropdown
+        [options]="departments"
+        optionLabel="label"
+        optionValue="value"
+        formControlName="department"
+        [ngClass]="{ 'p-invalid': studentForm.get('department')?.invalid && studentForm.get('department')?.touched }"
+      ></p-dropdown>
+      <small class="p-error" *ngIf="studentForm.get('department')?.invalid && studentForm.get('department')?.touched">
+        Department is required
+      </small>
+    </div>
+
+    <div class="flex justify-content-end mt-3">
+      <button pButton type="submit" label="Register" icon="pi pi-user-plus" [disabled]="studentForm.invalid"></button>
+    </div>
+  </form>
+</p-card>

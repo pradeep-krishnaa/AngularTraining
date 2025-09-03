@@ -1,0 +1,26 @@
+p-card {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.p-error {
+  font-size: 0.8rem;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.border-round-lg {
+  border-radius: 12px;
+}

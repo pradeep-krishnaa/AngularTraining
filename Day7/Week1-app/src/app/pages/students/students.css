@@ -1,0 +1,22 @@
+p-card {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.p-datatable {
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.border-round-lg {
+  border-radius: 12px;
+}
+
+.field {
+  margin-bottom: 1.2rem;
+}
