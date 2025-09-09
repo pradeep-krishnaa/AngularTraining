@@ -1,0 +1,169 @@
+<div class="admin-dashboard-container">
+  <!-- Header -->
+  <div class="dashboard-header">
+    <h1>Admin Dashboard</h1>
+    <p>Bug Statistics and Analytics</p>
+  </div>
+
+  <!-- Loading State -->
+  <div *ngIf="loading" class="loading-container">
+    <p-card>
+      <div class="loading-content">
+        <i class="pi pi-spin pi-spinner" style="font-size: 2rem"></i>
+        <p>Loading statistics...</p>
+      </div>
+    </p-card>
+  </div>
+
+  <!-- Error State -->
+  <div *ngIf="error && !loading" class="error-container">
+    <p-message severity="error" [text]="error"></p-message>
+    <p-button 
+      label="Retry" 
+      icon="pi pi-refresh" 
+      (onClick)="loadBugStats()"
+      styleClass="p-button-outlined">
+    </p-button>
+  </div>
+
+  <!-- Statistics Content -->
+  <div *ngIf="stats && !loading" class="stats-content">
+    
+    <!-- Summary Cards -->
+    <div class="summary-cards">
+      <p-card styleClass="summary-card">
+        <div class="summary-item">
+          <div class="summary-icon open">
+            <i class="pi pi-exclamation-triangle"></i>
+          </div>
+          <div class="summary-content">
+            <h3>{{ stats.openVsResolved.open }}</h3>
+            <p>Open Bugs</p>
+          </div>
+        </div>
+      </p-card>
+
+      <p-card styleClass="summary-card">
+        <div class="summary-item">
+          <div class="summary-icon resolved">
+            <i class="pi pi-check-circle"></i>
+          </div>
+          <div class="summary-content">
+            <h3>{{ stats.openVsResolved.resolved }}</h3>
+            <p>Resolved Bugs</p>
+          </div>
+        </div>
+      </p-card>
+
+      <p-card styleClass="summary-card">
+        <div class="summary-item">
+          <div class="summary-icon total">
+            <i class="pi pi-bug"></i>
+          </div>
+          <div class="summary-content">
+            <h3>{{ stats.openVsResolved.open + stats.openVsResolved.resolved }}</h3>
+            <p>Total Bugs</p>
+          </div>
+        </div>
+      </p-card>
+    </div>
+
+    <!-- Doughnut Charts Section -->
+    <div class="charts-section">
+      
+      <!-- Open vs Resolved Doughnut Chart -->
+      <p-card header="Open vs Resolved Bugs" styleClass="chart-card">
+        <div class="chart-container">
+          <p-chart 
+            type="doughnut" 
+            [data]="openResolvedData" 
+            [options]="getChartOptions()">
+          </p-chart>
+        </div>
+      </p-card>
+
+      <!-- Bugs by Project Doughnut Chart -->
+      <p-card header="Bugs by Project" styleClass="chart-card">
+        <div class="chart-container">
+          <p-chart 
+            type="doughnut" 
+            [data]="bugsByProjectData" 
+            [options]="getChartOptions()">
+          </p-chart>
+        </div>
+      </p-card>
+
+      <!-- Bugs by Status Doughnut Chart -->
+      <p-card header="Bugs by Status" styleClass="chart-card">
+        <div class="chart-container">
+          <p-chart 
+            type="doughnut" 
+            [data]="bugsByStatusData" 
+            [options]="getChartOptions()">
+          </p-chart>
+        </div>
+      </p-card>
+
+    </div>
+
+    <!-- Detailed Statistics Table -->
+    <div class="detailed-stats">
+      <p-card header="Detailed Statistics" styleClass="stats-table-card">
+        <div class="stats-tables">
+          
+          <!-- Bugs by Project Table -->
+          <div class="stats-table">
+            <h4>Bugs by Project</h4>
+            <div class="table-container">
+              <table class="stats-table-content">
+                <thead>
+                  <tr>
+                    <th>Project ID</th>
+                    <th>Bug Count</th>
+                    <th>Percentage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of stats.bugsByProject">
+                    <td>{{ item.projectId }}</td>
+                    <td>{{ item.count }}</td>
+                    <td>
+                      {{ ((item.count / (stats.openVsResolved.open + stats.openVsResolved.resolved)) * 100).toFixed(1) }}%
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Bugs by Status Table -->
+          <div class="stats-table">
+            <h4>Bugs by Status</h4>
+            <div class="table-container">
+              <table class="stats-table-content">
+                <thead>
+                  <tr>
+                    <th>Status</th>
+                    <th>Count</th>
+                    <th>Percentage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of stats.bugsByStatus">
+                    <td>{{ item.status }}</td>
+                    <td>{{ item.count }}</td>
+                    <td>
+                      {{ ((item.count / (stats.openVsResolved.open + stats.openVsResolved.resolved)) * 100).toFixed(1) }}%
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </p-card>
+    </div>
+
+  </div>
+</div>

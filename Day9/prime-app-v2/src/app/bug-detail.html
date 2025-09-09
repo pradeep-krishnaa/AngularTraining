@@ -1,0 +1,95 @@
+<div class="bug-detail-container" *ngIf="bug">
+  <!-- Bug Details Card -->
+  <p-card header="Bug Details" styleClass="bug-details-card">
+    <div class="bug-info">
+      <div class="bug-header">
+        <h2>{{ bug.title }}</h2>
+        <div class="bug-meta">
+          <p-tag [value]="bug.status" 
+                 [severity]="bug.status === 'Open' ? 'danger' : bug.status === 'In Progress' ? 'warning' : 'success'">
+          </p-tag>
+          <p-tag [value]="bug.priority" 
+                 [severity]="bug.priority === 'High' ? 'danger' : bug.priority === 'Medium' ? 'warning' : 'info'">
+          </p-tag>
+        </div>
+      </div>
+      
+      <div class="bug-description">
+        <h3>Description</h3>
+        <p>{{ bug.description }}</p>
+      </div>
+      
+      <div class="bug-metadata">
+        <div class="metadata-item">
+          <strong>Bug ID:</strong> {{ bug.id }}
+        </div>
+        <div class="metadata-item">
+          <strong>Project ID:</strong> {{ bug.projectId }}
+        </div>
+        <div class="metadata-item">
+          <strong>Assigned To User ID:</strong> {{ bug.assignedToUserId }}
+        </div>
+        <div class="metadata-item" *ngIf="bug.createdAt">
+          <strong>Created:</strong> {{ bug.createdAt | date:'medium' }}
+        </div>
+      </div>
+    </div>
+  </p-card>
+
+  <!-- Comments Section -->
+  <p-card header="Comments" styleClass="comments-card">
+    <!-- Add Comment Form -->
+    <div class="add-comment-section">
+      <h3>Add Comment</h3>
+      <div class="comment-form">
+        <textarea 
+          pInputTextarea 
+          [(ngModel)]="newComment" 
+          placeholder="Enter your comment here..."
+          rows="4"
+          styleClass="comment-textarea">
+        </textarea>
+        <p-button 
+          label="Add Comment" 
+          icon="pi pi-plus" 
+          (onClick)="addComment()"
+          [disabled]="!newComment.trim()"
+          styleClass="add-comment-btn">
+        </p-button>
+      </div>
+    </div>
+
+    <!-- Comments List -->
+    <div class="comments-list" *ngIf="comments && comments.length > 0">
+      <h3>Comments ({{ comments.length }})</h3>
+      <div class="comment-item" *ngFor="let comment of comments">
+        <p-card styleClass="comment-card">
+          <div class="comment-header">
+            <strong>{{ comment.author }}</strong>
+            <span class="comment-date" *ngIf="comment.createdAt">
+              {{ comment.createdAt | date:'medium' }}
+            </span>
+          </div>
+          <div class="comment-message">
+            {{ comment.message }}
+          </div>
+        </p-card>
+      </div>
+    </div>
+
+    <!-- No Comments Message -->
+    <div class="no-comments" *ngIf="!comments || comments.length === 0">
+      <p>No comments yet. Be the first to add a comment!</p>
+    </div>
+  </p-card>
+</div>
+
+<!-- Loading State -->
+<div class="loading-container" *ngIf="!bug">
+  <p-card>
+    <div class="loading-content">
+      <i class="pi pi-spin pi-spinner" style="font-size: 2rem"></i>
+      <p>Loading bug details...</p>
+    </div>
+  </p-card>
+</div>

@@ -1,0 +1,288 @@
+<div class="bugs-container">
+  <p-card header="Bug Dashboard" [styleClass]="'bugs-card'">
+    <!-- Authentication Check -->
+    <div *ngIf="!isAuthenticated" class="auth-required">
+      <div class="auth-message">
+        <i class="pi pi-lock" style="font-size: 3rem; color: #667eea;"></i>
+        <h3>Authentication Required</h3>
+        <p>You must be logged in to view bugs.</p>
+        <p-button 
+          label="Go to Login" 
+          icon="pi pi-sign-in" 
+          (onClick)="goToLogin()"
+          styleClass="p-button-primary">
+        </p-button>
+      </div>
+    </div>
+
+    <!-- Authenticated Content -->
+    <div *ngIf="isAuthenticated">
+      <div class="bugs-header">
+        <h2>Bugs</h2>
+
+        <div class="filter-group">
+          <!-- Create Bug Button -->
+          <p-button
+            *ngIf="canCreate()"
+            label="Create Bug"
+            icon="pi pi-plus"
+            (onClick)="createBug()"
+            styleClass="p-button-success">
+          </p-button>
+          <!-- Status Filter -->
+          <p-dropdown
+            [options]="statuses"
+            [(ngModel)]="selectedStatus"
+            optionLabel="label"
+            optionValue="value"
+            placeholder="Filter by Status"
+            (onChange)="filterBugs()"
+            [style]="{'width':'180px'}">
+          </p-dropdown>
+
+          <!-- Priority Filter -->
+          <p-dropdown
+            [options]="priorities"
+            [(ngModel)]="selectedPriority"
+            optionLabel="label"
+            optionValue="value"
+            placeholder="Filter by Priority"
+            (onChange)="filterBugs()"
+            [style]="{'width':'180px'}">
+          </p-dropdown>
+
+          <!-- Refresh Button -->
+          <p-button
+            label="Refresh"
+            icon="pi pi-refresh"
+            (onClick)="loadBugs()"
+            [loading]="loading"
+            styleClass="p-button-outlined">
+          </p-button>
+        </div>
+      </div>
+
+      <!-- Loading Spinner -->
+      <div *ngIf="loading" class="loading-container">
+        <p-progressSpinner></p-progressSpinner>
+        <p>Loading bugs...</p>
+      </div>
+
+      <!-- Bug Table -->
+      <div *ngIf="!loading && bugs.length > 0">
+        <p-table 
+          [value]="filteredBugs" 
+          [paginator]="true" 
+          [rows]="5"
+          [rowsPerPageOptions]="[5, 10, 20]"
+          styleClass="p-datatable-sm">
+
+          <ng-template pTemplate="header">
+            <tr>
+              <th (click)="sortBugs('id')">
+                ID 
+                <i class="pi" 
+                  [ngClass]="{
+                    'pi-sort': !sortDirection['id'],
+                    'pi-sort-amount-up-alt': sortDirection['id'] === 'asc',
+                    'pi-sort-amount-down': sortDirection['id'] === 'desc'
+                  }"></i>
+              </th>
+              <th (click)="sortBugs('title')">
+                Title 
+                <i class="pi" 
+                  [ngClass]="{
+                    'pi-sort': !sortDirection['title'],
+                    'pi-sort-amount-up-alt': sortDirection['title'] === 'asc',
+                    'pi-sort-amount-down': sortDirection['title'] === 'desc'
+                  }"></i>
+              </th>
+              <th (click)="sortBugs('description')">
+                Description
+                <i class="pi" 
+                  [ngClass]="{
+                    'pi-sort': !sortDirection['description'],
+                    'pi-sort-amount-up-alt': sortDirection['description'] === 'asc',
+                    'pi-sort-amount-down': sortDirection['description'] === 'desc'
+                  }"></i>
+              </th>
+              <th (click)="sortBugs('status')">
+                Status
+                <i class="pi" 
+                  [ngClass]="{
+                    'pi-sort': !sortDirection['status'],
+                    'pi-sort-amount-up-alt': sortDirection['status'] === 'asc',
+                    'pi-sort-amount-down': sortDirection['status'] === 'desc'
+                  }"></i>
+              </th>
+              <th (click)="sortBugs('priority')">
+                Priority
+                <i class="pi" 
+                  [ngClass]="{
+                    'pi-sort': !sortDirection['priority'],
+                    'pi-sort-amount-up-alt': sortDirection['priority'] === 'asc',
+                    'pi-sort-amount-down': sortDirection['priority'] === 'desc'
+                  }"></i>
+              </th>
+              <th (click)="sortBugs('createdAt')">
+                Created Date
+                <i class="pi" 
+                  [ngClass]="{
+                    'pi-sort': !sortDirection['createdAt'],
+                    'pi-sort-amount-up-alt': sortDirection['createdAt'] === 'asc',
+                    'pi-sort-amount-down': sortDirection['createdAt'] === 'desc'
+                  }"></i>
+              </th>
+              <th (click)="sortBugs('projectId')">
+                Project ID
+                <i class="pi" 
+                  [ngClass]="{
+                    'pi-sort': !sortDirection['projectId'],
+                    'pi-sort-amount-up-alt': sortDirection['projectId'] === 'asc',
+                    'pi-sort-amount-down': sortDirection['projectId'] === 'desc'
+                  }"></i>
+              </th>
+              <th *ngIf="canEdit() || canDelete()">Actions</th>
+            </tr>
+          </ng-template>
+
+          <ng-template pTemplate="body" let-bug>
+            <tr>
+              <td>{{bug.id}}</td>
+              <td>{{bug.title}}</td>
+              <td>{{bug.description}}</td>
+              <td>
+                <span class="status-badge" [class]="getStatusClass(bug.status)">
+                  {{bug.status}}
+                </span>
+              </td>
+              <td>
+                <span [ngClass]="getPriorityClass(bug.priority)">
+                  {{bug.priority}}
+                </span>
+              </td>
+
+              <td>{{bug.createdAt | date:'short'}}</td>
+              <td>{{bug.projectId}}</td>
+              <td *ngIf="canEdit() || canDelete()">
+                <p-button
+                  *ngIf="canEdit()"
+                  icon="pi pi-pencil"
+                  (onClick)="editBug(bug)"
+                  styleClass="p-button-text p-button-sm"
+                  pTooltip="Edit Bug">
+                </p-button>
+                <p-button
+                  *ngIf="canDelete()"
+                  icon="pi pi-trash"
+                  (onClick)="deleteBug(bug)"
+                  styleClass="p-button-text p-button-sm p-button-danger"
+                  pTooltip="Delete Bug">
+                </p-button>
+              </td>
+            </tr>
+          </ng-template>
+
+          <ng-template pTemplate="emptymessage">
+            <tr>
+              <td [attr.colspan]="canEdit() || canDelete() ? 8 : 7" class="text-center">No bugs found</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+
+      <!-- No Bugs -->
+      <div *ngIf="!loading && bugs.length === 0 && !error" class="no-bugs">
+        <p>No bugs available</p>
+      </div>
+
+      <!-- Error Message -->
+      <div *ngIf="error" class="error-message">
+        <p-message severity="error" [text]="error" styleClass="error-msg"></p-message>
+      </div>
+    </div>
+  </p-card>
+
+  <!-- Bug Form Dialog -->
+  <p-dialog 
+    [(visible)]="showDialog" 
+    [header]="isEditMode ? 'Edit Bug' : 'Create Bug'"
+    [modal]="true" 
+    [style]="{width: '500px'}">
+    
+    <form #bugForm="ngForm" (ngSubmit)="saveBug()">
+      <div class="p-fluid">
+        <div class="field">
+          <label for="title">Title *</label>
+          <input 
+            pInputText 
+            id="title" 
+            [(ngModel)]="bugData.title" 
+            name="title" 
+            required>
+        </div>
+        
+        <div class="field">
+          <label for="description">Description *</label>
+          <textarea 
+            pInputTextarea 
+            id="description" 
+            [(ngModel)]="bugData.description" 
+            name="description" 
+            rows="3" 
+            required>
+          </textarea>
+        </div>
+        
+        <div class="field">
+          <label for="status">Status</label>
+          <p-dropdown 
+            id="status" 
+            [options]="statusOptions" 
+            [(ngModel)]="bugData.status" 
+            name="status" 
+            optionLabel="label" 
+            optionValue="value">
+          </p-dropdown>
+        </div>
+        
+        <div class="field">
+          <label for="priority">Priority</label>
+          <p-dropdown 
+            id="priority" 
+            [options]="priorityOptions" 
+            [(ngModel)]="bugData.priority" 
+            name="priority" 
+            optionLabel="label" 
+            optionValue="value">
+          </p-dropdown>
+        </div>
+        
+        <div class="field">
+          <label for="projectId">Project ID</label>
+          <input 
+            pInputText 
+            id="projectId" 
+            [(ngModel)]="bugData.projectId" 
+            name="projectId" 
+            type="number">
+        </div>
+      </div>
+    </form>
+    
+    <ng-template pTemplate="footer">
+      <p-button 
+        label="Cancel" 
+        icon="pi pi-times" 
+        (onClick)="closeDialog()" 
+        styleClass="p-button-text">
+      </p-button>
+      <p-button 
+        [label]="isEditMode ? 'Update' : 'Create'" 
+        icon="pi pi-check" 
+        (onClick)="saveBug()" 
+        [disabled]="!bugForm.valid">
+      </p-button>
+    </ng-template>
+  </p-dialog>
+</div>
